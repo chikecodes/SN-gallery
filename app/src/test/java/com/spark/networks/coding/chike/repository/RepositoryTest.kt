@@ -32,4 +32,13 @@ class RepositoryTest {
         repository.uploadImage(uploadImageRequest)
         verify(remote).executeUploadImage(uploadImageRequest)
     }
+
+    /**
+     * Verify if calling [RepositoryImpl.getImages] triggers [ApiHelper.executeGetImages]
+     * */
+    @Test
+    fun testGetImages() {
+        repository.getImages()
+        verify(remote).executeGetImages()
+    }
 }

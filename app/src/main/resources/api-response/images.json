@@ -1,0 +1,20 @@
+{
+  "count": 3,
+  "uploads": [
+    {
+      "_id": "5bf545c04610334492ad0c46",
+      "date": "2018-11-22T15:12:59.371Z",
+      "image": "image-encoded-steeererfing"
+    },
+    {
+      "_id": "5bf5468b06b28644df332acc",
+      "date": "2018-11-22T15:12:59.371Z",
+      "image": "image-encoded-steeererfing"
+    },
+    {
+      "_id": "5bf5469e24323044fb1ead69",
+      "date": "2018-11-22T15:12:59.371Z",
+      "image": "image-encoded-steeererfing"
+    }
+  ]
+}

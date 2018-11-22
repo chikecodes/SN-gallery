@@ -3,6 +3,7 @@ package  com.spark.networks.coding.chike.networking
 import com.google.gson.Gson
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.whenever
+import com.spark.networks.coding.chike.model.GetImagesResponse
 import com.spark.networks.coding.chike.model.UploadImageRequest
 import com.spark.networks.coding.chike.model.UploadImageResponse
 import com.spark.networks.coding.chike.testing.DependencyProvider
@@ -37,6 +38,21 @@ class AppApiHelperTest {
             assertNoErrors()
             assertValueCount(1)
             assertEquals(values()[0].uploadedImage.image, imageBase64)
+        }
+    }
+
+    @Test
+    fun getImages() {
+        val gson = Gson()
+        val response = gson.fromJson(DependencyProvider.getResponseFromJson("images"),
+                GetImagesResponse::class.java)
+
+        whenever(webService.getImages()).thenReturn(Single.just(response))
+
+        AppApiHelper(webService).executeGetImages().test().run {
+            assertNoErrors()
+            assertValueCount(1)
+            assertEquals(values()[0].uploads.size, 3)
         }
     }
 }

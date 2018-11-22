@@ -54,6 +54,27 @@ class WebServiceTest {
                 }
     }
 
+    @Test
+    fun getImages() {
+        queueResponse {
+            setResponseCode(200)
+            setBody(DependencyProvider.getResponseFromJson("images"))
+        }
+
+        webService
+                .getImages()
+                .test()
+                .run {
+                    assertNoErrors()
+                    assertValueCount(1)
+                    Assert.assertEquals(values()[0].count, 3)
+                    Assert.assertEquals(values()[0].uploads.size, 3)
+                    Assert.assertEquals(values()[0].uploads[0].id, "5bf545c04610334492ad0c46")
+                    Assert.assertEquals(values()[0].uploads[1].id, "5bf5468b06b28644df332acc")
+                    Assert.assertEquals(values()[0].uploads[2].id, "5bf5469e24323044fb1ead69")
+                }
+    }
+
     private fun queueResponse(block: MockResponse.() -> Unit) {
         mockWebServer.enqueue(MockResponse().apply(block))
     }

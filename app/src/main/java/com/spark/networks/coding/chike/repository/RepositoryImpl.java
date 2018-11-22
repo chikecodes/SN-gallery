@@ -1,5 +1,6 @@
 package com.spark.networks.coding.chike.repository;
 
+import com.spark.networks.coding.chike.model.GetImagesResponse;
 import com.spark.networks.coding.chike.model.UploadImageRequest;
 import com.spark.networks.coding.chike.model.UploadImageResponse;
 import com.spark.networks.coding.chike.networking.ApiHelper;
@@ -23,5 +24,11 @@ public class RepositoryImpl implements GalleryContract.Repository {
     @Override
     public Single<UploadImageResponse> uploadImage(@NotNull UploadImageRequest request) {
         return apiHelper.executeUploadImage(request);
+    }
+
+    @NotNull
+    @Override
+    public Single<GetImagesResponse> getImages() {
+        return apiHelper.executeGetImages();
     }
 }
