@@ -32,6 +32,11 @@ android {
             buildConfigField 'String', 'BASE_URL', '"https://spark-network-challenge-chike.herokuapp.com/"'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {

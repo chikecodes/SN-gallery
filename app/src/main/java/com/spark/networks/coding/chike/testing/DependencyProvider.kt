@@ -38,6 +38,7 @@ object DependencyProvider {
      * @param fileName: File's name
      * @return JSON String
      */
+    @JvmStatic
     @SuppressLint("NewApi")
     fun getResponseFromJson(fileName: String): String {
         val inputStream = javaClass.classLoader

@@ -31,6 +31,7 @@ buildscript {
             'atsl'             : '1.0.1',
             'mockitoKotlin'    : '1.5.0',
             'robolectric'      : '3.6.1',
+            'retroLambda'      : '3.7.0',
             'sourceCompat'     : JavaVersion.VERSION_1_8,
             'targetCompat'     : JavaVersion.VERSION_1_8
     ]
@@ -103,7 +104,6 @@ buildscript {
         classpath deps.google.gmsPlugin
         classpath deps.kotlin.gradlePlugin
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

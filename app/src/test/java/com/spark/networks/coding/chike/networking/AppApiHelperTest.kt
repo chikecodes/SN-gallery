@@ -40,19 +40,4 @@ class AppApiHelperTest {
             assertEquals(values()[0].uploadedImage.image, imageBase64)
         }
     }
-
-    @Test
-    fun getImages() {
-        val gson = Gson()
-        val response = gson.fromJson(DependencyProvider.getResponseFromJson("images"),
-                GetImagesResponse::class.java)
-
-        whenever(webService.getImages()).thenReturn(Single.just(response))
-
-        AppApiHelper(webService).executeGetImages().test().run {
-            assertNoErrors()
-            assertValueCount(1)
-            assertEquals(values()[0].uploads.size, 3)
-        }
-    }
 }
