@@ -1,4 +1,4 @@
-package com.spark.networks.coding.spark_networks_coding_challenge_chike;
+package com.spark.networks.coding.chike;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.spark.networks.coding.spark_networks_coding_challenge_chike;
+package com.spark.networks.coding.chike;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
