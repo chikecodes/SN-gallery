@@ -3,6 +3,8 @@ package com.spark.networks.coding.chike.di.module;
 import android.app.Application;
 import android.content.Context;
 
+import com.spark.networks.coding.chike.repository.GalleryContract;
+import com.spark.networks.coding.chike.repository.RepositoryImpl;
 import com.spark.networks.coding.chike.rx.AppSchedulerProvider;
 import com.spark.networks.coding.chike.rx.SchedulerProvider;
 
@@ -27,4 +29,11 @@ public class AppModule {
     SchedulerProvider provideSchedulerProvider() {
         return new AppSchedulerProvider();
     }
+
+    @Provides
+    @Singleton
+    GalleryContract.Repository provideRepository(RepositoryImpl repository) {
+        return repository;
+    }
+
 }
