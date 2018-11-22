@@ -1,0 +1,8 @@
+{
+  "message": "Image uploaded successfully",
+  "uploadedImage": {
+    "_id": "5bf6c7f1214ef80016a49af4",
+    "time_uploaded": "2018-11-22T15:14:57.908Z",
+    "image": "image-xxxx"
+  }
+}
