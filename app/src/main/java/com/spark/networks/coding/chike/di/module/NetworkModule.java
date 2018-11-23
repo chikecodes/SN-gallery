@@ -8,9 +8,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import com.spark.networks.coding.chike.BuildConfig;
+import com.spark.networks.coding.chike.networking.ApiHelper;
 import com.spark.networks.coding.chike.networking.AppApiHelper;
-import com.spark.networks.coding.chike.rx.AppSchedulerProvider;
-import com.spark.networks.coding.chike.rx.SchedulerProvider;
+import com.spark.networks.coding.chike.networking.WebService;
 
 import java.util.concurrent.TimeUnit;
 
@@ -50,17 +50,15 @@ public class NetworkModule {
 
     @Provides
     @Singleton
-    AppApiHelper provideApiHelper(AppApiHelper appApiHelper) {
+    ApiHelper provideApiHelper(AppApiHelper appApiHelper) {
         return appApiHelper;
     }
 
-
-    /*@Provides
+    @Provides
     @Singleton
     WebService provideWebService(Retrofit retrofit) {
         return retrofit.create(WebService.class);
     }
-*/
     @Provides
     @Singleton
     OkHttpClient provideOkHttpClient(Cache cache) {
@@ -82,10 +80,5 @@ public class NetworkModule {
     Cache provideOkhttpCache(Context context) {
         int cacheSize = 10 * 1024 * 1024;
         return new Cache(context.getCacheDir(), cacheSize);
-    }
-
-    @Provides
-    SchedulerProvider provideSchedulerProvider() {
-        return new AppSchedulerProvider();
     }
 }

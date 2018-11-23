@@ -1,8 +1,9 @@
 package com.spark.networks.coding.chike.base;
 
-import android.arch.lifecycle.ViewModel;
 import com.spark.networks.coding.chike.repository.GalleryContract;
 import com.spark.networks.coding.chike.rx.SchedulerProvider;
+
+import androidx.lifecycle.ViewModel;
 import io.reactivex.disposables.CompositeDisposable;
 
 /**

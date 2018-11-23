@@ -1,10 +1,8 @@
 package com.spark.networks.coding.chike.testing
 
-import android.support.annotation.VisibleForTesting
+import androidx.annotation.VisibleForTesting
 import com.spark.networks.coding.chike.rx.SchedulerProvider
 import io.reactivex.Scheduler
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
 import io.reactivex.schedulers.TestScheduler
 
 @VisibleForTesting(otherwise = VisibleForTesting.NONE)

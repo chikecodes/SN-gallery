@@ -1,7 +1,7 @@
 package com.spark.networks.coding.chike.networking;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * Created by chike on 11/22/18.
