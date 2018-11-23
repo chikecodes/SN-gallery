@@ -1,5 +1,5 @@
 # spark-network-coding-challenge
-Spark Networks Coding Challenge
+Image Gallery - Spark Networks Android Coding Challenge
 
 To run the Android app, please clone the repo into Android Studio and click run. 
 
