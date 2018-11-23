@@ -71,6 +71,8 @@ dependencies {
 
     implementation deps.additional.jodaTime
     implementation deps.additional.imageCropper
+    implementation deps.additional.eventBus
+
 
     //Local unit tests
     testImplementation deps.test.junit

@@ -15,9 +15,12 @@ import android.widget.Toast;
 import com.spark.networks.coding.chike.R;
 import com.spark.networks.coding.chike.base.BaseActivity;
 import com.spark.networks.coding.chike.data.model.UploadImageRequest;
+import com.spark.networks.coding.chike.events.RefreshEvent;
 import com.spark.networks.coding.chike.utils.Utilities;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.io.IOException;
 
@@ -81,6 +84,7 @@ public class UploadImageActivity extends BaseActivity {
                         if (result.data != null) {
                             Toast.makeText(UploadImageActivity.this,
                                     "Upload successful", Toast.LENGTH_LONG).show();
+                            EventBus.getDefault().postSticky(new RefreshEvent());
                         }
                         break;
                     case ERROR:

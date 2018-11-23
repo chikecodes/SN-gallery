@@ -9,8 +9,13 @@ import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.spark.networks.coding.chike.R;
 import com.spark.networks.coding.chike.base.BaseActivity;
+import com.spark.networks.coding.chike.events.RefreshEvent;
 import com.spark.networks.coding.chike.ui.images.adapter.ImageAdapter;
 import com.spark.networks.coding.chike.ui.upload.UploadImageActivity;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import javax.inject.Inject;
 
@@ -96,5 +101,25 @@ public class ImagesActivity extends BaseActivity {
             }
 
         });
+    }
+
+    @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
+    public void onEvent(RefreshEvent event) {
+        if (event != null) {
+            imagesViewModel.fetchImages();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        removeStickyEvents();
+    }
+
+    private void removeStickyEvents() {
+        RefreshEvent refreshEvent = EventBus.getDefault().getStickyEvent(RefreshEvent.class);
+        if (refreshEvent != null) {
+            EventBus.getDefault().removeStickyEvent(refreshEvent);
+        }
     }
 }
