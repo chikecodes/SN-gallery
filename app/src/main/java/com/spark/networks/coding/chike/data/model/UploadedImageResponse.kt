@@ -1,4 +1,4 @@
-package com.spark.networks.coding.chike.model
+package com.spark.networks.coding.chike.data.model
 
 import com.google.gson.annotations.SerializedName
 

@@ -8,9 +8,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import com.spark.networks.coding.chike.BuildConfig;
-import com.spark.networks.coding.chike.networking.ApiHelper;
-import com.spark.networks.coding.chike.networking.AppApiHelper;
-import com.spark.networks.coding.chike.networking.WebService;
+import com.spark.networks.coding.chike.data.networking.ApiHelper;
+import com.spark.networks.coding.chike.data.networking.AppApiHelper;
+import com.spark.networks.coding.chike.data.networking.WebService;
 
 import java.util.concurrent.TimeUnit;
 

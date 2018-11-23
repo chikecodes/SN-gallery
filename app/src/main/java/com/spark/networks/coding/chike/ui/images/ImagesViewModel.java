@@ -1,9 +1,9 @@
 package com.spark.networks.coding.chike.ui.images;
 
 import com.spark.networks.coding.chike.base.BaseViewModel;
-import com.spark.networks.coding.chike.model.UploadedImageResponse;
-import com.spark.networks.coding.chike.networking.Resource;
-import com.spark.networks.coding.chike.repository.GalleryContract;
+import com.spark.networks.coding.chike.data.model.UploadedImageResponse;
+import com.spark.networks.coding.chike.data.networking.Resource;
+import com.spark.networks.coding.chike.data.repository.GalleryContract;
 import com.spark.networks.coding.chike.rx.SchedulerProvider;
 
 import java.util.List;

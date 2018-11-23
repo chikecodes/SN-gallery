@@ -1,11 +1,10 @@
-package  com.spark.networks.coding.chike.networking
+package  com.spark.networks.coding.chike.data.networking
 
 import com.google.gson.Gson
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.whenever
-import com.spark.networks.coding.chike.model.GetImagesResponse
-import com.spark.networks.coding.chike.model.UploadImageRequest
-import com.spark.networks.coding.chike.model.UploadImageResponse
+import com.spark.networks.coding.chike.data.model.UploadImageRequest
+import com.spark.networks.coding.chike.data.model.UploadImageResponse
 import com.spark.networks.coding.chike.testing.DependencyProvider
 import io.reactivex.Single
 import org.junit.Assert.assertEquals

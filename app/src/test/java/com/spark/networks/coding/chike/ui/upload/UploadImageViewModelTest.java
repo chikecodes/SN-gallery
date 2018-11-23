@@ -1,19 +1,12 @@
 package com.spark.networks.coding.chike.ui.upload;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.Drawable;
-
 import com.google.gson.Gson;
-import com.spark.networks.coding.chike.R;
-import com.spark.networks.coding.chike.model.GetImagesResponse;
-import com.spark.networks.coding.chike.model.UploadImageRequest;
-import com.spark.networks.coding.chike.model.UploadImageResponse;
-import com.spark.networks.coding.chike.networking.Status;
-import com.spark.networks.coding.chike.repository.GalleryContract;
+import com.spark.networks.coding.chike.data.model.UploadImageRequest;
+import com.spark.networks.coding.chike.data.model.UploadImageResponse;
+import com.spark.networks.coding.chike.data.networking.Status;
+import com.spark.networks.coding.chike.data.repository.GalleryContract;
 import com.spark.networks.coding.chike.testing.DependencyProvider;
 import com.spark.networks.coding.chike.testing.TestSchedulerProvider;
-import com.spark.networks.coding.chike.ui.images.ImagesViewModel;
 
 import org.junit.After;
 import org.junit.Before;
@@ -23,9 +16,6 @@ import org.junit.rules.TestRule;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.robolectric.Robolectric;
-import org.robolectric.RobolectricTestRunner;
-import org.robolectric.RuntimeEnvironment;
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule;
 import io.reactivex.Single;

@@ -1,9 +1,9 @@
-package com.spark.networks.coding.chike.repository;
+package com.spark.networks.coding.chike.data.repository;
 
-import com.spark.networks.coding.chike.model.GetImagesResponse;
-import com.spark.networks.coding.chike.model.UploadImageRequest;
-import com.spark.networks.coding.chike.model.UploadImageResponse;
-import com.spark.networks.coding.chike.networking.ApiHelper;
+import com.spark.networks.coding.chike.data.model.GetImagesResponse;
+import com.spark.networks.coding.chike.data.model.UploadImageRequest;
+import com.spark.networks.coding.chike.data.model.UploadImageResponse;
+import com.spark.networks.coding.chike.data.networking.ApiHelper;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,14 +1,10 @@
 package com.spark.networks.coding.chike.ui.upload;
 
-import com.spark.networks.coding.chike.repository.GalleryContract;
+import com.spark.networks.coding.chike.data.repository.GalleryContract;
 import com.spark.networks.coding.chike.rx.SchedulerProvider;
-import com.spark.networks.coding.chike.ui.images.ImagesActivity;
-import com.spark.networks.coding.chike.ui.images.ImagesViewModel;
-import com.spark.networks.coding.chike.ui.images.adapter.ImageAdapter;
 import com.spark.networks.coding.chike.utils.ViewModelProviderFactory;
 
 import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import dagger.Module;
 import dagger.Provides;
 

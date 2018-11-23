@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import com.spark.networks.coding.chike.R;
 import com.spark.networks.coding.chike.base.BaseViewHolder;
-import com.spark.networks.coding.chike.model.UploadedImageResponse;
+import com.spark.networks.coding.chike.data.model.UploadedImageResponse;
 import com.spark.networks.coding.chike.utils.Utilities;
 
 import androidx.annotation.NonNull;

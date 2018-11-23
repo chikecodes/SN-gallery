@@ -12,13 +12,9 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.spark.networks.coding.chike.R;
 import com.spark.networks.coding.chike.base.BaseActivity;
-import com.spark.networks.coding.chike.model.UploadImageRequest;
-import com.spark.networks.coding.chike.ui.images.ImagesActivity;
-import com.spark.networks.coding.chike.ui.images.ImagesViewModel;
-import com.spark.networks.coding.chike.ui.images.adapter.ImageAdapter;
+import com.spark.networks.coding.chike.data.model.UploadImageRequest;
 import com.spark.networks.coding.chike.utils.Utilities;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
@@ -29,9 +25,6 @@ import javax.inject.Inject;
 
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import dagger.android.AndroidInjection;
 
 public class UploadImageActivity extends BaseActivity {

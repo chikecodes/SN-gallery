@@ -1,4 +1,4 @@
-package com.spark.networks.coding.chike.networking;
+package com.spark.networks.coding.chike.data.networking;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

@@ -1,4 +1,4 @@
-package com.spark.networks.coding.chike.networking
+package com.spark.networks.coding.chike.data.networking
 
 object ApiEndpoint {
 

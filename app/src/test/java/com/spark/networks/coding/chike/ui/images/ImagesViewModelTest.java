@@ -1,9 +1,9 @@
 package com.spark.networks.coding.chike.ui.images;
 
 import com.google.gson.Gson;
-import com.spark.networks.coding.chike.model.GetImagesResponse;
-import com.spark.networks.coding.chike.networking.Status;
-import com.spark.networks.coding.chike.repository.GalleryContract;
+import com.spark.networks.coding.chike.data.model.GetImagesResponse;
+import com.spark.networks.coding.chike.data.networking.Status;
+import com.spark.networks.coding.chike.data.repository.GalleryContract;
 import com.spark.networks.coding.chike.testing.DependencyProvider;
 import com.spark.networks.coding.chike.testing.TestSchedulerProvider;
 

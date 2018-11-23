@@ -1,9 +1,8 @@
-package com.spark.networks.coding.chike.networking;
+package com.spark.networks.coding.chike.data.networking;
 
-import com.spark.networks.coding.chike.model.GetImagesResponse;
-import com.spark.networks.coding.chike.model.UploadImageRequest;
-import com.spark.networks.coding.chike.model.UploadImageResponse;
-import com.spark.networks.coding.chike.model.UploadedImageResponse;
+import com.spark.networks.coding.chike.data.model.GetImagesResponse;
+import com.spark.networks.coding.chike.data.model.UploadImageRequest;
+import com.spark.networks.coding.chike.data.model.UploadImageResponse;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

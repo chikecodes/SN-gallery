@@ -1,6 +1,6 @@
-package com.spark.networks.coding.chike.networking
+package com.spark.networks.coding.chike.data.networking
 
-import com.spark.networks.coding.chike.model.UploadImageRequest
+import com.spark.networks.coding.chike.data.model.UploadImageRequest
 import com.spark.networks.coding.chike.testing.DependencyProvider
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
