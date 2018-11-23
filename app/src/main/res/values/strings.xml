@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">spark-networks-coding-challenge-chike</string>
+    <string name="mssg_no_image">No image</string>
+    <string name="action_select_image">Select Image</string>
+    <string name="action_upload_image">Upload image</string>
 </resources>

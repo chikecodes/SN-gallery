@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
 android {
@@ -12,9 +11,8 @@ android {
         targetSdkVersion versions.compileSdk
         versionCode 1
         versionName "1.0"
-        applicationId "com.spark.networks.coding.spark_networks_coding_challenge_chike"
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -43,12 +41,18 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation deps.support.appCompat
+    implementation deps.support.recyclerView
+    implementation deps.support.support
+    implementation deps.support.designSupport
 
     implementation deps.reactivex.rxJava
     implementation deps.reactivex.rxAndroid
     implementation deps.android.roomRuntime
 
     implementation deps.kotlin.stdlib
+
+    implementation deps.android.lifecycleExt
+    implementation deps.android.lifecycleCommon
 
     implementation deps.google.dagger
     annotationProcessor deps.google.daggerProcessor
@@ -66,6 +70,7 @@ dependencies {
     implementation deps.facebook.networkInterceptor
 
     implementation deps.additional.jodaTime
+    implementation deps.additional.imageCropper
 
     //Local unit tests
     testImplementation deps.test.junit
@@ -74,4 +79,13 @@ dependencies {
     testImplementation deps.test.mockWebServer
     testImplementation deps.test.livedataTesting
     testImplementation deps.test.roomTesting
+
+    androidTestImplementation "androidx.test:rules:1.1.0"
+    androidTestImplementation 'androidx.test:rules:1.1.0'
+    androidTestImplementation "androidx.test.espresso:espresso-intents:3.1.0"
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    androidTestImplementation "org.mockito:mockito-core:2.21.0"
+    androidTestImplementation "org.mockito:mockito-android:2.15.0"
+
 }
